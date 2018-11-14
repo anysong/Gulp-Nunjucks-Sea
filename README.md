@@ -1,2 +1,5 @@
 # Gulp-Nunjucks-Sea
-gulp Nunjucks Seajs 
+gulp 
+Nunjucks 
+Seajs
+
