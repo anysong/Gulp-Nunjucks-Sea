@@ -5,6 +5,8 @@
 ###依赖 
     require-dir   //管理多个tasks
     gulp-sass     //编译sass，scss
+    gulp-notify   //1现实报错  2不终止任务
+
     
 
 

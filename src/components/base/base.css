@@ -1,7 +1,9 @@
 .base {
   width: 200px;
   height: 50px;
-  border: 1px solid #ccc; }
+  border: 1px solid #ccc;
+  -webkit-transform: initial;
+          transform: initial; }
   .base .base-inner {
     width: 100px;
     height: 20px;
