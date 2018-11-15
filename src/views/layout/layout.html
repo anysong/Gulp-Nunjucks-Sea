@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="../components/base/base.css">
     <link rel="stylesheet" href="../components/footer/footer.css">
+    {% block style %}
+        {{ Tag('link', '/components/main/main.css') }}
+    {% endblock %}
 </head>
 
 <body>
@@ -19,11 +22,8 @@
         <div class="footer-inner"></div>
     </div>
 
-    
-    <div>身体数据</div>
-    <!-- 身体数据 -->
-    
-
+    {% block body %}
+    {% endblock %}
 </body>
 
 </html>

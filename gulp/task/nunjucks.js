@@ -8,6 +8,8 @@ const nunjuncks = require('gulp-nunjucks');
 
 gulp.task('nunjucks-base', () => {
     gulp.src('./src/views/index.html')
-        .pipe(nunjuncks.compile())
+        .pipe(nunjuncks.compile({
+            username: 'xxmxm'
+        }))
         .pipe(gulp.dest('./.www/views'))
 })
