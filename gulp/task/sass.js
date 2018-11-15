@@ -15,7 +15,7 @@ gulp.task("sass-base", function(){
         browsers: ["last 2 versions"],  //主流浏览器的2个版本
         cascade: true                   //是否美化属性值
     }))
-    .pipe(gulp.dest("./src/components/base"))
+    .pipe(gulp.dest("./.www/components/base"))
 })
 
 gulp.task("sass-footer", function(){
@@ -26,7 +26,7 @@ gulp.task("sass-footer", function(){
         browsers: ["last 2 versions"],  //主流浏览器的2个版本
         cascade: true                   //是否美化属性值
     }))
-    .pipe(gulp.dest("./src/components/footer"))
+    .pipe(gulp.dest("./.www/components/footer"))
 })
 
 gulp.task("sass", ["sass-base", "sass-footer"])
