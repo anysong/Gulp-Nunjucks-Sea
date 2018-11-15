@@ -6,11 +6,11 @@ var watch = require('gulp-watch');
  * 哪个模块发生变化单独编译哪个模块
  */
 
-gulp.task('watch', ['sass'], function(){
-    watch('./src/components/base/*.scss', function(){
+gulp.task('watch', ['sass'], () => {
+    watch('./src/components/base/*.scss', () => {
         gulp.start('sass-base');
     })
-    watch('./src/components/footer/*.scss', function(){
+    watch('./src/components/footer/*.scss', () => {
         gulp.start('sass-footer');
     })
 })

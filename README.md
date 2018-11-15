@@ -8,6 +8,8 @@
     gulp-notify         //1现实报错  2不终止任务
     gulp-autoprefixer   //自动加前缀
     gulp-watch          //监听
+    gulp-nunjucks       //nunjucks模板引擎
+    
 
     
 
