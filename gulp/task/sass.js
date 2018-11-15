@@ -14,7 +14,7 @@ gulp.task('sass-base', function(){
 })
 
 gulp.task("sass-footer", function(){
-    gulp.src('./src/component/footer/footer.scss')
+    gulp.src('./src/components/footer/footer.scss')
     .pipe(sass())
     .pipe(gulp.dest('./src/components/footer'))
 })
