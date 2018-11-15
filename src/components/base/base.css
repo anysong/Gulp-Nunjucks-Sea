@@ -3,7 +3,8 @@
   height: 50px;
   border: 1px solid #ccc;
   -webkit-transform: initial;
-          transform: initial; }
+          transform: initial;
+  margin-bottom: 20px; }
   .base .base-inner {
     width: 100px;
     height: 20px;

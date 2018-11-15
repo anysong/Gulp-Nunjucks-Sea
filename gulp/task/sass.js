@@ -21,6 +21,11 @@ gulp.task("sass-base", function(){
 gulp.task("sass-footer", function(){
     gulp.src("./src/components/footer/footer.scss")
     .pipe(sass())
+    .on("error",notify.onError("Error: <%= error.message %>"))
+    .pipe(autoPreFixer({
+        browsers: ["last 2 versions"],  //主流浏览器的2个版本
+        cascade: true                   //是否美化属性值
+    }))
     .pipe(gulp.dest("./src/components/footer"))
 })
 
