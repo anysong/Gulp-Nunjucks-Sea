@@ -1,8 +1,41 @@
 {% extends "./layout/layout.html" %}
 
+{% import "data.html" as data %}
+
+
+
 {% block body %}
-    {{ super() }}
-    <div>身体数据</div>
-    <!-- 身体数据 -->
-    
+{{ super() }}
+
+
+<div>
+    {% filter replace("身体","body数据") %}
+    身体数据
+    {% endfilter %}
+</div>
+<div style="color: red;background: #ccc">
+    {% for i in [1,2,3,4,5] -%}
+    {{ i }}
+    {%- endfor %}
+</div>
+<div style="color: red;background: #ccc">
+    {% for i in [1,2,3,4,5] %}
+    {{ i }}
+    {% endfor %}
+</div>
+<div>
+    {{ foo | escape }}
+</div>
+<div>
+    {% for i in range(0, 5) -%}
+        {{ i }},
+      {%- endfor %}
+</div>
+{% macro tat(x, y) %}
+{{caller()}} {{ x + y }}
+{% endmacro %}
+{% call tat(1, 2) %}
+aaa
+{% endcall %}
+
 {% endblock %}

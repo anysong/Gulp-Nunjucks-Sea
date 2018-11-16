@@ -1,0 +1,18 @@
+{% macro sDiv(text) %}
+<div>{{ text }}</div>
+{% endmacro %}
+
+{% macro label(text) %}
+<div>
+  <label>{{ text }}</label>
+</div>
+{% endmacro %}
+
+
+{% macro input(val) %}
+    <input type="text" value="{{ val }}">
+{% endmacro %}
+
+{% macro tat(x, y) %}
+    {{ x + y }}
+{% endmacro %}
