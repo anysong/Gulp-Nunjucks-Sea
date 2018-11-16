@@ -9,9 +9,7 @@
 
     <link rel="stylesheet" href="../components/base/base.css">
     <link rel="stylesheet" href="../components/footer/footer.css">
-    {% block style %}
-        {{ Tag('link', '/components/main/main.css') }}
-    {% endblock %}
+  
 </head>
 
 <body>
@@ -23,6 +21,7 @@
     </div>
 
     {% block body %}
+        <div>父级</div>
     {% endblock %}
 </body>
 
